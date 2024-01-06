@@ -9,7 +9,7 @@ from scipy.sparse import load_npz
 import pandas as pd
 
 # Download NLTK stopwords data
-# nltk.download('stopwords')
+nltk.download('stopwords')
 
 # Load precomputed TF-IDF vectors and vectorizer during Streamlit initialization
 vectorizer = joblib.load('tfidf_vectorizer.joblib')
