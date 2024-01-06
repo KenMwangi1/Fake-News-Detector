@@ -2,6 +2,7 @@
 import streamlit as st
 import joblib
 import re
+import nltk
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
