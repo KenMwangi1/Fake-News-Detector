@@ -8,6 +8,9 @@ from nltk.corpus import stopwords
 from scipy.sparse import load_npz
 import pandas as pd
 
+# Download NLTK stopwords data
+nltk.download('stopwords')
+
 # Load precomputed TF-IDF vectors and vectorizer during Streamlit initialization
 vectorizer = joblib.load('tfidf_vectorizer.joblib')
 X_transformed = load_npz('tfidf_vectors_sparse.npz')
